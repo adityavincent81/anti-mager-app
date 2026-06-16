@@ -1,4 +1,4 @@
-const API_URL = `${process.env.NEXT_PUBLIC_API_URL}/api/leaderboard`;
+const API_URL = `${process.env.NEXT_PUBLIC_API_URL}/leaderboard`;
 
 export type LeaderboardUser = {
   id: number;

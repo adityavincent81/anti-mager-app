@@ -88,7 +88,7 @@ export const createTask = async (
 ========================= */
 
 export const getLeaderboard = async () => {
-  const res = await fetch(`${BASE_URL}/api/leaderboard`, {
+  const res = await fetch(`${BASE_URL}/leaderboard`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
