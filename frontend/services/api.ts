@@ -9,7 +9,7 @@ export const registerUser = async (data: {
   email: string;
   password: string;
 }) => {
-  const res = await fetch(`${BASE_URL}/auth/register`, {
+  const res = await fetch(`${BASE_URL}/api/auth/register`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -28,7 +28,7 @@ export const loginUser = async (data: {
   email: string;
   password: string;
 }) => {
-  const res = await fetch(`${BASE_URL}/auth/login`, {
+  const res = await fetch(`${BASE_URL}/api/auth/login`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -48,7 +48,7 @@ export const loginUser = async (data: {
 ========================= */
 
 export const getTasks = async (token: string) => {
-  const res = await fetch(`${BASE_URL}/tasks`, {
+  const res = await fetch(`${BASE_URL}/api/tasks`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
@@ -67,7 +67,7 @@ export const createTask = async (
   data: { title: string; deadline: string },
   token: string
 ) => {
-  const res = await fetch(`${BASE_URL}/tasks`, {
+  const res = await fetch(`${BASE_URL}/api/tasks`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -88,7 +88,7 @@ export const createTask = async (
 ========================= */
 
 export const getLeaderboard = async () => {
-  const res = await fetch(`${BASE_URL}/leaderboard`, {
+  const res = await fetch(`${BASE_URL}/api/leaderboard`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",

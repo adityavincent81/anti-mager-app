@@ -1,4 +1,4 @@
-const API_URL = `${process.env.NEXT_PUBLIC_API_URL}/tasks`;
+const API_URL = `${process.env.NEXT_PUBLIC_API_URL}/api/tasks`;
 
 export type Task = {
   id: number;
